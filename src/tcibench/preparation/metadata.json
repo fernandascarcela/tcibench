@@ -1,0 +1,292 @@
+{
+  "diabetes": {
+    "display_name": "Pima Indians Diabetes",
+    "target_column": "Outcome",
+    "description": "Diagnostic measurements for predicting diabetes in female patients of Pima Indian heritage.",
+    "source_url": "https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database",
+    "columns": {
+      "Pregnancies": {
+        "type": "numeric",
+        "description": "Number of pregnancies."
+      },
+      "Glucose": {
+        "type": "numeric",
+        "description": "Plasma glucose concentration after a two-hour oral glucose tolerance test."
+      },
+      "BloodPressure": {
+        "type": "numeric",
+        "description": "Diastolic blood pressure (mm Hg)."
+      },
+      "SkinThickness": {
+        "type": "numeric",
+        "description": "Triceps skin-fold thickness (mm)."
+      },
+      "Insulin": {
+        "type": "numeric",
+        "description": "Two-hour serum insulin (mu U/ml)."
+      },
+      "BMI": {
+        "type": "numeric",
+        "description": "Body mass index (kg/m²)."
+      },
+      "DiabetesPedigreeFunction": {
+        "type": "numeric",
+        "description": "Diabetes pedigree function score."
+      },
+      "Age": {
+        "type": "numeric",
+        "description": "Age in years."
+      },
+      "Outcome": {
+        "type": "categorical",
+        "description": "Diabetes outcome class (0: absent; 1: present)."
+      }
+    }
+  },
+  "travel_insurance": {
+    "display_name": "Travel Insurance",
+    "target_column": "TravelInsurance",
+    "description": "Customer data used to predict travel insurance purchase.",
+    "columns_to_drop": [
+      "Unnamed: 0"
+    ],
+    "columns": {
+      "Age": {
+        "type": "numeric",
+        "description": "Customer age in years."
+      },
+      "Employment Type": {
+        "type": "categorical",
+        "description": "Customer employment sector."
+      },
+      "GraduateOrNot": {
+        "type": "categorical",
+        "description": "Whether the customer is a college graduate."
+      },
+      "AnnualIncome": {
+        "type": "numeric",
+        "description": "Annual income in Indian rupees, rounded to the nearest 50,000."
+      },
+      "FamilyMembers": {
+        "type": "numeric",
+        "description": "Number of family members."
+      },
+      "ChronicDiseases": {
+        "type": "categorical",
+        "description": "Whether the customer has a chronic disease (0: no; 1: yes)."
+      },
+      "FrequentFlyer": {
+        "type": "categorical",
+        "description": "Whether the customer is a frequent flyer (Yes or No)."
+      },
+      "EverTravelledAbroad": {
+        "type": "categorical",
+        "description": "Whether the customer has travelled abroad (Yes or No)."
+      },
+      "TravelInsurance": {
+        "type": "categorical",
+        "description": "Whether the customer purchased travel insurance (0: no; 1: yes)."
+      }
+    }
+  },
+  "adult": {
+    "display_name": "Adult Income",
+    "target_column": "income",
+    "description": "1994 Census records used to predict whether annual income exceeds US$50,000.",
+    "source_url": "https://archive.ics.uci.edu/dataset/2/adult",
+    "train_limit": 10000,
+    "columns": {
+      "age": {
+        "type": "numeric",
+        "description": "Age in years."
+      },
+      "workclass": {
+        "type": "categorical",
+        "description": "Employment sector or type of employer."
+      },
+      "fnlwgt": {
+        "type": "numeric",
+        "description": "Final CPS sampling weight."
+      },
+      "education": {
+        "type": "categorical",
+        "description": "Highest education level category."
+      },
+      "education-num": {
+        "type": "numeric",
+        "description": "Numeric encoding of education."
+      },
+      "marital-status": {
+        "type": "categorical",
+        "description": "Marital status."
+      },
+      "occupation": {
+        "type": "categorical",
+        "description": "Occupation category."
+      },
+      "relationship": {
+        "type": "categorical",
+        "description": "Relationship role within the household."
+      },
+      "race": {
+        "type": "categorical",
+        "description": "Race category."
+      },
+      "sex": {
+        "type": "categorical",
+        "description": "Sex category (Female or Male)."
+      },
+      "capital-gain": {
+        "type": "numeric",
+        "description": "Capital gains in US dollars."
+      },
+      "capital-loss": {
+        "type": "numeric",
+        "description": "Capital losses in US dollars."
+      },
+      "hours-per-week": {
+        "type": "numeric",
+        "description": "Hours worked per week."
+      },
+      "native-country": {
+        "type": "categorical",
+        "description": "Country of origin."
+      },
+      "income": {
+        "type": "categorical",
+        "description": "Annual income class (<=50K or >50K US dollars)."
+      }
+    }
+  },
+  "sick": {
+    "display_name": "Thyroid Sick",
+    "target_column": "Class",
+    "description": "Thyroid disease records used to classify patients as sick or negative.",
+    "source_url": "https://www.openml.org/d/38",
+    "columns_to_drop": [
+      "TBG"
+    ],
+    "columns": {
+      "age": {
+        "type": "numeric",
+        "description": "Patient age."
+      },
+      "sex": {
+        "type": "categorical",
+        "description": "Recorded sex of the patient."
+      },
+      "on_thyroxine": {
+        "type": "categorical",
+        "description": "Indicator of whether the patient is taking thyroxine."
+      },
+      "query_on_thyroxine": {
+        "type": "categorical",
+        "description": "Indicator of a query or investigation related to thyroxine. The supplementary article does not clearly distinguish this variable from on_thyroxine, so the exact distinction is not established by that source."
+      },
+      "on_antithyroid_medication": {
+        "type": "categorical",
+        "description": "Indicator of whether the patient is taking antithyroid medication."
+      },
+      "sick": {
+        "type": "categorical",
+        "description": "Indicator of whether the patient is recorded as sick. This is a predictor and is distinct from the target column Class."
+      },
+      "pregnant": {
+        "type": "categorical",
+        "description": "Indicator of whether the patient is recorded as pregnant."
+      },
+      "thyroid_surgery": {
+        "type": "categorical",
+        "description": "Indicator of whether the patient has undergone thyroid surgery."
+      },
+      "I131_treatment": {
+        "type": "categorical",
+        "description": "Indicator of whether the patient is recorded as receiving I-131 treatment."
+      },
+      "query_hypothyroid": {
+        "type": "categorical",
+        "description": "Indicator of a query or suspicion related to hypothyroidism. The supplementary article describes this in terms of whether the patient believes they have hypothyroidism; the precise operational meaning is not independently established here."
+      },
+      "query_hyperthyroid": {
+        "type": "categorical",
+        "description": "Indicator of a query or suspicion related to hyperthyroidism. The supplementary article describes this in terms of whether the patient believes they have hyperthyroidism; the precise operational meaning is not independently established here."
+      },
+      "lithium": {
+        "type": "categorical",
+        "description": "Indicator associated with lithium. The supplementary article gives an incomplete description, so the exact operational meaning cannot be confirmed from that source alone."
+      },
+      "goitre": {
+        "type": "categorical",
+        "description": "Indicator of whether goitre is recorded."
+      },
+      "tumor": {
+        "type": "categorical",
+        "description": "Indicator of whether a tumor is recorded. The supplementary article does not specify the tumor's location."
+      },
+      "hypopituitary": {
+        "type": "categorical",
+        "description": "Indicator associated with hypopituitary status. The supplementary article contains an unclear description referring to a hyperpituitary gland, so the exact intended meaning requires confirmation."
+      },
+      "psych": {
+        "type": "categorical",
+        "description": "Psych-related indicator. The supplementary article's description is incomplete, so its exact meaning cannot be established from that source alone."
+      },
+      "TSH_measured": {
+        "type": "categorical",
+        "description": "Indicator of whether TSH was measured."
+      },
+      "TSH": {
+        "type": "numeric",
+        "description": "Recorded TSH (thyroid-stimulating hormone) laboratory measurement."
+      },
+      "T3_measured": {
+        "type": "categorical",
+        "description": "Indicator of whether T3 was measured."
+      },
+      "T3": {
+        "type": "numeric",
+        "description": "Recorded T3 (triiodothyronine) laboratory measurement."
+      },
+      "TT4_measured": {
+        "type": "categorical",
+        "description": "Indicator of whether TT4 was measured."
+      },
+      "TT4": {
+        "type": "numeric",
+        "description": "Recorded TT4 (total thyroxine) laboratory measurement."
+      },
+      "T4U_measured": {
+        "type": "categorical",
+        "description": "Indicator of whether T4U was measured."
+      },
+      "T4U": {
+        "type": "numeric",
+        "description": "Recorded T4U (thyroxine utilization) laboratory measurement, using the dataset's original variable name."
+      },
+      "FTI_measured": {
+        "type": "categorical",
+        "description": "Indicator of whether FTI was measured."
+      },
+      "FTI": {
+        "type": "numeric",
+        "description": "Recorded FTI (free thyroxine index) laboratory measurement."
+      },
+      "TBG_measured": {
+        "type": "categorical",
+        "description": "Indicator of whether TBG was measured. In this OpenML version, the TBG values are entirely missing, so this field should be interpreted cautiously."
+      },
+      "TBG": {
+        "type": "numeric",
+        "description": "Recorded TBG (thyroxine-binding globulin) laboratory measurement. All values are missing in this OpenML version; the column is retained in the metadata for traceability but excluded from model training."
+      },
+      "referral_source": {
+        "type": "categorical",
+        "description": "Recorded source or category of referral, using the categories provided by the dataset."
+      },
+      "Class": {
+        "type": "categorical",
+        "description": "Binary target label in the OpenML sick dataset, with the classes negative and sick. This definition is specific to this dataset version and should not be replaced by the target description from studies using other thyroid-disease dataset variants."
+      }
+    }
+  }
+}
