@@ -288,5 +288,42 @@
         "description": "Binary target label in the OpenML sick dataset, with the classes negative and sick. This definition is specific to this dataset version and should not be replaced by the target description from studies using other thyroid-disease dataset variants."
       }
     }
+  },
+  "predictive_maintenance": {
+    "display_name": "AI4I 2020 Predictive Maintenance",
+    "target_column": "Target",
+    "description": "Synthetic dataset modelled on industrial predictive maintenance: sensor measurements for predicting machine failures.",
+    "source_url": "https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification",
+    "columns_to_drop": ["UDI", "Product ID", "Failure Type"],
+    "columns": {
+      "Type": {
+        "type": "categorical",
+        "description": "Product quality variant: L (low), M (medium) or H (high)."
+      },
+      "Air temperature (K)": {
+        "type": "numeric",
+        "description": "Air temperature in kelvin."
+      },
+      "Process temperature (K)": {
+        "type": "numeric",
+        "description": "Process temperature in kelvin."
+      },
+      "Rotational speed (rpm)": {
+        "type": "numeric",
+        "description": "Rotational speed in revolutions per minute."
+      },
+      "Torque (Nm)": {
+        "type": "numeric",
+        "description": "Torque in newton-metres."
+      },
+      "Tool wear (min)": {
+        "type": "numeric",
+        "description": "Tool wear in minutes."
+      },
+      "Target": {
+        "type": "categorical",
+        "description": "Machine failure (0: no failure; 1: failure)."
+      }
+    }
   }
 }
