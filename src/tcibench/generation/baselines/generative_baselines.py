@@ -153,7 +153,7 @@ def generate_with_synthcity(
             f" | copies of train {count_exact_copies(valid, train)}"
         )
 
-        if len(valid) >= n_samples:
+        if len(pool) >= n_samples:
             valid =pool  # use the pool of valid samples, not just the last batch
             
             if set(valid.columns) != set(train.columns):

@@ -639,11 +639,12 @@ def _run_directory(
     model: str,
     output_root: str | Path,
 ) -> Path:
-    """Return <output_root>/<dataset>/<model>; the fold is the file name."""
+    """Return <output_root>/<dataset>/llms/<model>; the fold is the file name."""
 
     return (
         Path(output_root)
         / metadata.dataset_id
+        / "llms"
         / _safe_name(model)
     )
 
